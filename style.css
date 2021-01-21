@@ -41,6 +41,7 @@ html {
   
   .navbar {
     width: 100%;
+    font-family: 'Lora';
   }
 
   .navbar ul {
@@ -61,7 +62,7 @@ html {
 
   .navbar .logo {
     flex:5;
-    font-family: 'Lora';
+    
   }
   .navbar .social{
     flex:1;
@@ -73,7 +74,7 @@ html {
     color:#dcdddd
   }
   .navbar .social a {
-    color:#f4f687
+    color:#c1db33;
   }
   .navbar span, i {
     text-align: center;
