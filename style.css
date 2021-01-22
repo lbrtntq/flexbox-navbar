@@ -27,6 +27,9 @@ body {
 h1, h2, h3, h4, h5 {
   font-family: 'Lora';
 }
+p {
+  line-height: 1.5em;
+}
 
 .main-wrapper {
   padding: 0px;
@@ -47,7 +50,6 @@ h1, h2, h3, h4, h5 {
 .navbar {
   width:100%;
   font-family: "Lora";
-  border:1px green solid;
 }
 
 .navbar ul {
@@ -109,6 +111,29 @@ h1, h2, h3, h4, h5 {
 
 .item-description {
   width:100%;
+  justify-content: center;
+  min-height: 400px;
+}
+
+.item-description .item-header{
+  width:100%;
+  margin:0 auto;
+  text-align: center;
+}
+
+.item-header img {
+  height: 350px;;
+}
+
+.item-header div {
+  max-width: 500px;
+  margin:0 auto;
+}
+
+.item-description table {
+  width:300px;
+  flex:1;
+  margin:0 auto;
   text-align: center;
 }
 
