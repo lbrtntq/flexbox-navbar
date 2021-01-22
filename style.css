@@ -1,119 +1,172 @@
 html {
-    box-sizing: border-box;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  
-  ul {
-      list-style: none;
-      padding:0;
-      margin:0;
-  }
+  box-sizing: border-box;
+}
 
-  a {
-    text-decoration: none;
-  }
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
 
-  body {
-    font-family: 'Muli';
-    margin: 0;
-    letter-spacing: 1px;
-  }
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
-  .main-wrapper {
-    padding:0px;
-    max-width: 1000px;
-    margin: 0 auto;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    background-color: #fff;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-    display: flex;
-    min-height: 100vh;
-  }
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: "Muli";
+  margin: 0;
+  letter-spacing: 1px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Lora';
+}
+
+.main-wrapper {
+  padding: 0px;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-wrap:wrap;
+}
+
+/*
+  NAVBAR
+*/
+
+.navbar {
+  width:100%;
+  font-family: "Lora";
+  border:1px green solid;
+}
+
+.navbar ul {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #075066;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li {
+  cursor: pointer;
+  flex: 4;
+  display: flex;
+  padding: 20px;
+}
+
+.navbar .logo {
+  flex: 5;
+}
+
+.navbar .social {
+  flex: 1;
+}
+
+.navbar a {
+  align-items: center;
+  display: flex;
+  flex: 1;
+  color: #dcdddd;
+}
+
+.navbar .social a {
+  color: #c1db33;
+}
+
+.navbar span,i {
+  text-align: center;
+  flex: 1;
+}
+
+.navbar ul li:hover {
+  background-color: #054457;
+  transition: 0.5s;
+}
 
 
-  
-  
-  .navbar {
-    width: 100%;
-    font-family: 'Lora';
-  }
 
-  .navbar ul {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #075066;
-    padding: 0;
-    margin: 0;
-  }
+/*MAIN CONTENT*/
+.main-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
 
-  .navbar ul li {
-    cursor: pointer;
-    flex:4;
-    display: flex;
-    padding:20px;
-  }
+.main-content > * {
+  padding:20px;
+}
 
-  .navbar .logo {
-    flex:5;
-    
-  }
-  .navbar .social{
-    flex:1;
-  }
-  .navbar a {
-    align-items:center;
-    display:flex;
-    flex: 1;
-    color:#dcdddd
-  }
-  .navbar .social a {
-    color:#c1db33;
-  }
-  .navbar span, i {
-    text-align: center;
-    flex: 1;
-  }
+.item-description {
+  width:100%;
+  text-align: center;
+}
 
-  /*
-  
-  */  
+.item-list h3 {
+  margin:0;
+  padding:0;
+}
 
-  .navbar ul li:hover {
-    background-color: #054457;
-    transition: 0.5s;
-  }
-  /* vietnamese */
-  @font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk40eiNxw.woff2) format('woff2');
-    unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB;
-  }
-  /* latin-ext */
-  @font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk50eiNxw.woff2) format('woff2');
-    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
-  }
-  /* latin */
-  @font-face {
-    font-family: 'Muli';
-    font-style: normal;
-    font-weight: 400;
-    font-display: swap;
-    src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2) format('woff2');
-    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-  }
-  
+.item-list {
+  flex: 1;
+  width: 100%;
+  display: flex;
+}
+
+.item-list ul {
+  flex-basis: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.item-list li {
+  margin:0 10px 0 10px;
+}
+
+/* vietnamese */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk40eiNxw.woff2)
+    format("woff2");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1,
+    U+01AF-01B0, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk50eiNxw.woff2)
+    format("woff2");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB,
+    U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: "Muli";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v22/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30eg.woff2)
+    format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
